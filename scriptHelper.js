@@ -37,8 +37,8 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let copilotStatus = document.getElementById('copilotStatus');
     let cargoStatus = document.getElementById('cargoStatus');
     let fuelStatus = document.getElementById('fuelStatus');
-    pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-    copilotStatus.innerHTML = `Co-pilot ${copilotName.value} is ready for launch`;
+    pilotStatus.innerHTML = `Pilot ${pilotName} is ready for launch`;
+    copilotStatus.innerHTML = `Co-pilot ${copilotName} is ready for launch`;
     list.style.visibility = 'hidden';
 
     
@@ -50,8 +50,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
             fuelStatus.innerHTML = "Fuel level too low for launch";
             launchStatus.innerHTML = "Shuttle Not Ready for Launch";
             launchStatus.style.color = "rgb(199, 37, 78)";
-            pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-            copilotStatus.innerHTML = `Co-pilot ${copilotName.value} is ready for launch`;
         }else{
             faultyItems.style.visibility = "visible";
             fuelStatus.innerHTML = "Fuel level high enough for launch";
@@ -62,8 +60,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
             cargoStatus.innerHTML = "Cargo mass too heavy for launch";
             launchStatus.innerHTML = "Shuttle Not Ready for Launch";
             launchStatus.style.color = "rgb(199, 37, 78)";
-            pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-            copilotStatus.innerHTML = `Co-pilot ${copilotName.value} is ready for launch`;
         }else{
             faultyItems.style.visibility = "visible";
             cargoStatus.innerHTML = "Cargo mass low enough for launch"
@@ -73,8 +69,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
             faultyItems.style.visibility = "visible";
             launchStatus.innerHTML = "Shuttle is Ready for Launch";
             launchStatus.style.color = "rgb(65, 159, 106)";
-            pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-            copilotStatus.innerHTML = `Co-pilot ${copilotName.value} is ready for launch`;
         }
 
     
