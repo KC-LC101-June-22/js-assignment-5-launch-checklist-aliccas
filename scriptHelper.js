@@ -37,8 +37,8 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let copilotStatus = document.getElementById('copilotStatus');
     let cargoStatus = document.getElementById('cargoStatus');
     let fuelStatus = document.getElementById('fuelStatus');
-    pilotStatus.innerHTML = `Pilot ${pilotName} is ready for launch`;
-    copilotStatus.innerHTML = `Co-pilot ${copilotName} is ready for launch`;
+    pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
+    copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
     list.style.visibility = 'hidden';
 
     
