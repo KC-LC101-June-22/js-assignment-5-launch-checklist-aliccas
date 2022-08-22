@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
     let copilotName = document.querySelector("input[name=copilotName]");
     let fuelLevel = document.querySelector("input[name=fuelLevel]");
     let cargoMass = document.querySelector("input[name=cargoMass]");
+    list.style.visibility = 'hidden';
     
 
 
