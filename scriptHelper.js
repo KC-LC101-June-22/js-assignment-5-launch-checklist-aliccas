@@ -16,14 +16,14 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
-    if (testInput === "") {
-        return "Empty";
+    if (testInput === '') {
+        return 'Empty';
     }
     if (isNaN(Number(testInput))) {
-        return "Not a Number";
+        return 'Not a Number';
     }
     if (!isNaN(Number(testInput))) {
-        return "Is a Number";
+        return 'Is a Number';
     }
 }
 
@@ -36,10 +36,10 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let pilotStatus = document.getElementById('pilotStatus');
     let copilotStatus = document.getElementById('copilotStatus');
     let cargoStatus = document.getElementById('cargoStatus');
-    //let fuelStatus = document.getElementById('fuelStatus');
+    let fuelStatus = document.getElementById('fuelStatus');
     pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
     copilotStatus.innerHTML = `Co-pilot ${copilotName.value} is ready for launch`;
-    list.style.visibility = "hidden";
+    list.style.visibility = 'hidden';
 
     
 

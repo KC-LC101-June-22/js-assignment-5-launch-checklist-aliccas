@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
 
 
     let launchStatus = document.getElementById('launchStatus');
-    //let faultyItems = document.getElementById('faultyItems');
+    let faultyItems = document.getElementById('faultyItems');
     let pilotStatus = document.getElementById('pilotStatus');
     let copilotStatus = document.getElementById('copilotStatus');
     let fuelStatus = document.getElementById('fuelStatus');
@@ -18,7 +18,7 @@ window.addEventListener("load", function() {
     
     form.addEventListener("submit", function(event) {
 
-        list.style.visibility = "hidden";
+        list.style.visibility = 'hidden';
 
         // If any of the form elements are left blank, an alert is needed.
         if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "") {
